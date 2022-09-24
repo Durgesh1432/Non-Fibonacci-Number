@@ -1,0 +1,31 @@
+//adikari sai krishna from JSPIDERS
+
+
+//WAPTP NON FIBONACCI NUMBER 1 TO 100?
+import java.util.Scanner;
+class Non_Fibonacci
+{
+	public static void main(String[] args) 
+	{
+		Scanner durgesh= new Scanner(System.in);
+		System.out.println("ENTER THE RANGE");
+		int n=durgesh.nextInt();
+		System.out.println("Nonfibonacci Numbers are:");
+		int a = 0;
+		int b = 1;
+		int sum = 0;
+		for (int i=0;i<n;i++ )
+		{
+			if (i==sum)
+			{
+				sum=a+b;
+				a=b;
+				b=sum;
+			}
+			else
+			{
+				System.out.print(i+" ");
+			}
+		}
+	}
+}
